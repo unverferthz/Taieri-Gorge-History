@@ -1,0 +1,46 @@
+﻿@model List<TaeiriGorgeHistoric.Models.Trip>
+
+@{
+    ViewBag.Title = "Show All";
+}
+
+<!DOCTYPE html />
+<html>
+    <head>
+        <title></title>
+        <link rel="Stylesheet" type="text/css" href="../../Content/HomePageStyles.css" />
+    </head>
+    <body>
+        <div id="header">
+            <h2>All Trips</h2>
+        </div>
+        <div id="contentArea">
+            <nav>
+                <ul>
+                    <li><a href="../Home/Index">Home</a></li>
+                    <li>All Trips</li>
+                    <li><a href="../AddTrip/AddTrip"> Add Trip</a></li>
+                </ul>
+            </nav>
+            <hr />
+            <div id="mainContent">
+                <div class="centeredContent">
+                    <br />
+                    <table>
+                        <tr><th>Trip ID</th><th>Driver</th><th>Date</th><th>Link</th></tr>
+                            @foreach (TaeiriGorgeHistoric.Models.Trip Trip in Model)
+                            {
+                                <tr>
+                                    <td>@Trip.TripID</td> <td>@Trip.driver</td> <td>@Trip.date</td><td>@Html.ActionLink("Show Details", "../TripDetails/TripDetails", new { tripID = Trip.TripID }, new { @class = "showDetails" })</td>
+                                                                            
+                                </tr>
+                            }
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+                
+        </div>
+    </body>
+</html>

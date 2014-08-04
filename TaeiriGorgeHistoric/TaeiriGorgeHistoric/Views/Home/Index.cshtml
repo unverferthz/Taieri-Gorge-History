@@ -1,0 +1,54 @@
+﻿@model List<TaeiriGorgeHistoric.Models.Trip>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html />
+<html>
+    <head>
+        <title></title>
+        <link rel="Stylesheet" type="text/css" href="../../Content/HomePageStyles.css" />
+        <script type="text/javascript" src="../../Scripts/datepicker.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h2>Home</h2>
+        </div>
+        <div id="contentArea">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li><a href="../AllTrips/ShowAll">All Trips</a></li>
+                    <li><a href="../AddTrip/AddTrip"> Add Trip</a></li>
+                </ul>
+            </nav>
+            <hr />
+            <div id="mainContent">
+                <div class="centeredContent">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp @Html.Label("Sort Type:")
+                    <br />
+                    @Html.Label("Date: ")<input type='text' name='date' id='date' class='datepicker' /> <span style="display: inline-block; width: 160px;"></span>
+                    @Html.Label("Most Recent")<span style="display: inline-block; width: 160px;"></span>
+                    @Html.Label("Drivers: ") @Html.DropDownList("driverList", ViewBag.driverList as SelectList)
+                    <br />
+                    <br />
+
+                    <table>
+                        <tr><th>Trip ID</th><th>Driver</th><th>Date</th><th>Link</th></tr>
+                            @foreach (TaeiriGorgeHistoric.Models.Trip Trip in Model)
+                            {
+                                <tr>
+                                    <td>@Trip.TripID</td> <td>@Trip.driver</td> <td>@Trip.date</td><td>@Html.ActionLink("Show Details", "../TripDetails/TripDetails", new { tripID = Trip.TripID }, new { @class = "showDetails" })</td>
+                                                                            
+                                </tr>
+                            }
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+                
+        </div>
+    </body>
+</html>

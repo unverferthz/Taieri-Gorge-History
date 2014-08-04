@@ -1,0 +1,59 @@
+﻿@model List<TaeiriGorgeHistoric.Models.Trip>
+
+@{
+    ViewBag.Title = "Show All";
+}
+
+<!DOCTYPE html />
+<html>
+    <head>
+        <title></title>
+        <link rel="Stylesheet" type="text/css" href="../../Content/HomePageStyles.css" />
+        <script type="text/javascript" src="../../Scripts/datepicker.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h2>All Trips</h2>
+        </div>
+        <div id="contentArea">
+            <nav>
+                <ul>
+                    <li><a href="../Home/Index">Home</a></li>
+                    <li><a href="../AllTrips/ShowAll">All Trips</a></li>
+                    <li>Add Trip</li>
+                </ul>
+            </nav>
+            <hr />
+            <div id="mainContent">
+                <form action="AddTrip" method="post">
+                    <div id="labels">
+                        @Html.Label("Driver:")
+                        <br />
+                        @Html.Label("Date:")
+                        <br />
+                        @Html.Label("Departure Time:")
+                        <br />
+                        @Html.Label("End Time:")
+                        <br />
+                        @Html.Label("Destination:")
+                    </div>
+                    <div id="inputBoxes">
+                        <input type="text" name="driver"/>
+                        <br />
+                        <input type='text' name='date' id='date' class='datepicker' name="date" />
+                        <br />
+                        <input type="text" name="departureTime" />
+                        <br />
+                        <input type="text" name="endTime" />
+                        <br />
+                        <input type="text" name="destination" />
+                    </div>
+                    <input type="submit" value="Submit Trip" name="submitTrip" />
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </body>
+</html>

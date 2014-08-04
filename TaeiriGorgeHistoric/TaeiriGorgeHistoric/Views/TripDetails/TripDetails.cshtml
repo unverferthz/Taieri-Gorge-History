@@ -1,0 +1,59 @@
+﻿@model TaeiriGorgeHistoric.Models.TripAndGPS
+
+@{
+    ViewBag.Title = "Show All";
+}
+
+<!DOCTYPE html />
+<html>
+    <head>
+        <link rel="Stylesheet" type="text/css" href="../../Content/HomePageStyles.css" />
+        <script type="text/javascript">
+            var latLangArray = @Html.Raw(Json.Encode(ViewBag.allLatLangs));
+        </script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCX8eWkqB3RbQi71AS4j8iTdyuHZQMPvR8&sensor=false"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="../../Scripts/GpsMap.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h2>All Trips</h2>
+        </div>
+        <div id="contentArea">
+            <nav>
+                <ul>
+                    <li><a href="../Home/Index">Home</a></li>
+                    <li><a href="../AllTrips/ShowAll">All Trips</a></li>
+                    <li><a href="../AddTrip/AddTrip">Add Trip</a></li>
+                </ul>
+            </nav>
+            <hr />
+            <div id="mainContent">
+                <div id="mapArea"></div>
+                <p>Trip ID: @Model.currentTrip.TripID</p>
+                <p>Driver: @Model.currentTrip.driver</p>
+                <p>Date: @Model.currentTrip.date</p>
+                <p>Depature Time: @Model.currentTrip.departureTime</p>
+                <p>End Time: @Model.currentTrip.endTime</p>
+                <p>Destination: @Model.currentTrip.destination</p>
+
+                <br />
+
+                <div id ="chart_div"></div>
+                <br />
+                <table>
+                    <tr><th>GPS Coordinate</th><th>Current Time</th><th>Current Speed</th></tr>
+                    @foreach (TaeiriGorgeHistoric.Models.GPS_Point gps in Model.GPS_points)
+                    {
+                        <tr>
+                           <td>@gps.GPSCoordinate</td><td>@gps.currentTime</td><td>@gps.currentSpeed</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </body>
+</html>

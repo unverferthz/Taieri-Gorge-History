@@ -1,0 +1,21 @@
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoric\TaeiriGorgeHistoric\bin\TaeiriGorgeHistoric.dll
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoric\TaeiriGorgeHistoric\bin\TaeiriGorgeHistoric.pdb
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoric\TaeiriGorgeHistoric\bin\EntityFramework.dll
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoric\TaeiriGorgeHistoric\bin\EntityFramework.xml
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoric\TaeiriGorgeHistoric\obj\Debug\TaeiriGorgeHistoric.dll
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoric\TaeiriGorgeHistoric\obj\Debug\TaeiriGorgeHistoric.pdb
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoric\TaeiriGorgeHistoric\obj\Debug\TaeiriGorgeHistoric.csprojResolveAssemblyReference.cache
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoricBackup\TaeiriGorgeHistoric\bin\TaeiriGorgeHistoric.dll
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoricBackup\TaeiriGorgeHistoric\bin\TaeiriGorgeHistoric.pdb
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoricBackup\TaeiriGorgeHistoric\bin\EntityFramework.dll
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoricBackup\TaeiriGorgeHistoric\bin\EntityFramework.xml
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoricBackup\TaeiriGorgeHistoric\obj\Debug\TaeiriGorgeHistoric.csprojResolveAssemblyReference.cache
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoricBackup\TaeiriGorgeHistoric\obj\Debug\TaeiriGorgeHistoric.dll
+D:\Polytech Work\Third Year\Project\TaeiriGorgeHistoricBackup\TaeiriGorgeHistoric\obj\Debug\TaeiriGorgeHistoric.pdb
+C:\Users\Zane\Desktop\TaeiriGorgeHistoric\TaeiriGorgeHistoric\bin\TaeiriGorgeHistoric.dll
+C:\Users\Zane\Desktop\TaeiriGorgeHistoric\TaeiriGorgeHistoric\bin\TaeiriGorgeHistoric.pdb
+C:\Users\Zane\Desktop\TaeiriGorgeHistoric\TaeiriGorgeHistoric\bin\EntityFramework.dll
+C:\Users\Zane\Desktop\TaeiriGorgeHistoric\TaeiriGorgeHistoric\bin\EntityFramework.xml
+C:\Users\Zane\Desktop\TaeiriGorgeHistoric\TaeiriGorgeHistoric\obj\Debug\TaeiriGorgeHistoric.csprojResolveAssemblyReference.cache
+C:\Users\Zane\Desktop\TaeiriGorgeHistoric\TaeiriGorgeHistoric\obj\Debug\TaeiriGorgeHistoric.dll
+C:\Users\Zane\Desktop\TaeiriGorgeHistoric\TaeiriGorgeHistoric\obj\Debug\TaeiriGorgeHistoric.pdb
